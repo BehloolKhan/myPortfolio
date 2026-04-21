@@ -4,9 +4,9 @@ Currently, the web pages are static.
 
 ## My web stack:
 ### Front end:
-* __ JavaScript__
-* __ CSS __
-* __ HTML __
+* ** JavaScript **
+* ** CSS **
+* ** HTML **
 
 ### BackEnd:
-* __ PHP __
+* ** PHP **
