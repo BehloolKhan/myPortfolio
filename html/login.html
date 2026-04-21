@@ -1,0 +1,89 @@
+<!-- asks the user to input an email address and password (Alternatively, this can also
+be included with index.html within the <aside> element). -->
+<!-- login form -->
+<!-- After this is submitted, should be redirected to addEntry - blog page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pangolin&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <article>
+
+        <header id="navBar">
+            <h2>Behlool Khan</h2>
+            <nav>
+                <a href="/html/index.html">Home page</a>
+                <a href="/html/portfolio.html">portflio</a>
+                <a href="/html/blog.html">blog</a>
+                <a href="/html/education.html">education</a>
+                <a href="/html/skills.html">skills</a>
+            </nav>
+        </header>
+
+        <section id="Form">
+
+            <form method="POST">
+                <fieldset>
+
+                    <div id="message">
+                        <h2>Welcome back</h2>
+                        <p>Enter your details</p>
+                    </div>
+
+                    <figure>
+                            <img src="/images/particles.png" id="logo">
+                    </figure>
+
+
+                    <div>
+                        <label for="user-email">Email: </label>
+                        <br>
+                        <input type="email" name="userEmail" class="userInput" id="user-email">
+                    </div>
+
+                    <!-- Think about the structure of password -->
+                    <div>
+                        <label for="user-password">Password: </label>
+                        <br>
+                        <input type="password" name="userPassword" class="userInput" id="user-password">
+                    </div>
+
+
+
+                    <div id="Buttons">
+                        <input type="submit" class="Button" value="login">
+                        <input type="reset" class="Button" value="Clear details">
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="image">
+            <figure>
+                <img src="/images/betterGPU.png", alt="Image of GPU">
+                <figcaption>I love GPUs, trademark of freepik</figcaption>
+            </figure>
+        </section>
+
+        
+    </article>
+</body>
+</html>
+

@@ -1,0 +1,110 @@
+<!-- Portfolio - this page will provide information about links and descriptions/evidence of
+projects you have worked on. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- stylesheets -->
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/portflio.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pangolin&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <article>
+
+        <header id="navBar">
+            <h1>Behlool Khan</h1>
+            <nav>
+                <a href="/html/login.html">login page</a>
+                <a href="/html/index.html">Home</a>
+                <a href="/html/blog.html">blog</a>
+                <a href="/html/education.html">education</a>
+                <a href="/html/skills.html">skills</a>
+            </nav>
+        </header>
+
+        <h1 id="Projects">
+            My Projects
+        </h1>
+
+        <section id="BooleanProject" class="projectSection">
+            <figure class="projectFigure">
+                <figcaption><h2 class="projectTitles">Boolean logic simulator</h2></figcaption>
+                <img src="/images/boolean.png" class="projectImage" alt="logicGatesPicture">
+                <a href="https://github.com/BehloolKhan/boolean_logic_simulator">View Project</a>
+            </figure>
+
+            <p class="Description">
+                <h3>Description: </h3>
+                <br>
+                A logic simulator that allows users to create logic circuits using AND, OR, NOT, and other gates and generate
+                truth tables based on the circuit aswell as a boolean logic gate expression. The opposite can be down aswell.
+                The user can type in a boolean expression which generates a circuit aswell as a truth table
+            </p>
+
+            <ul class="OverView">
+                <li>Built using python + tkinter</li>
+                <li>Simulates logic gates</li>
+                <li>Generates Truth Tables</li>
+            </ul>
+
+        </section>
+
+        <section id="ProjectileProject" class="projectSection">
+            <figure class="projectFigure">
+                <figcaption><h2 class="projectTitles">Projectile Motion simulator</h2></figcaption>
+                <img src="/images/projectile.png" class="projectImage", alt="projectileMotionPicture">
+                <a href="https://github.com/BehloolKhan/projectileMotionGithub">View Project</a>
+            </figure>
+
+            <p class="Description">
+                <h3>Description: </h3>
+                <br>
+                An interactive projectile motion simulator that visualises the trajectory of a projectile under gravity, allowing
+                adjustments for angle of projection, magnitude of intial velocity. Allows user to incorperate air resistance
+            </p>
+
+            <ul class="OverView">
+                <li>Built using python + pygame</li>
+                <li>Allows user to vary angle of projection as well as magnitude at launch</li>
+                <li>User can see graph of vertical displacement and velocity against time </li>
+                <li>User has option to turn on air resistance</li>
+            </ul>
+        </section>
+
+        <section id="SimulationProject" class="projectSection">
+
+            <figure class="projectFigure">
+                <figcaption><h2 class="projectTitles">Mars surface simulation</h2></figcaption>
+                <img src="/images/mars.png" class="projectImage" class="MarsSimulationPicture">
+                <a href="https://github.com/BehloolKhan/mars-Surface-simulation">View Project</a>
+            </figure>
+
+            <p class="Description">
+                <h3>Description: </h3>
+                <br>
+                A Simulation that recreates the surface of mars with procedural generation of the different terrains found on mars
+                such as dust, bed rock, boulders, sands
+            </p>
+
+            <ul class="OverView">
+                <li>Built using python + pygame</li>
+                <li>Surface is split into tiles</li>
+                <li>Each tile belongs to 4-5 different kinds of terrain</li>
+                <li>Color of tile indiactes terrain, e.g yellow = sand</li>
+            </ul>
+
+        </section>
+
+    </article>
+</body>
+</html>

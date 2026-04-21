@@ -1,0 +1,138 @@
+<!-- User can see all blog posts -->
+<!-- There should be a link to page which allows user to add blog page -addEntry.html -->
+<!-- Should also contain a log out button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog </title>
+
+    <!-- stylesheets -->
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+
+    <!-- Link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pangolin&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header id="navBar">
+            <h1>Behlool Khan</h1>
+            <nav>
+                <a href="/html/addEntry.html">addEntry</a>
+                <a href="/html/index.html">Home</a>
+                <a href="/html/login.html">login</a>
+                <a href="/html/portfolio.html">porfolio</a>
+                <a href="/html/skills.html">skills</a>
+                <a href="/html/education.html">Education</a>
+            </nav>
+    </header>
+
+    <article>
+
+        <h1>Blog</h1>
+
+        <section id="section1">
+            <div>
+                <h2>Rant about linkdeln</h2>
+                <p>Linkdeln absolutely sucks. Its a performative website and my dream is too one day buy it and shut it down</p>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div>
+                <h2>cpp learning</h2>
+                <p>Started learning about cpp, nice language but hard</p>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div>
+                <h2>Java OOP</h2>
+                <p>learning about OOP in java is way better than what I have been used to</p>
+            </div>
+        </section>
+
+        <section id="section4">
+            <div>
+                <h2>Applications of Automata</h2>
+                <p>
+                    The study of Formal Languages provides the rules that allow computers to process information, ranging from simple
+                    patterns to complex human speech in NLP. By using Finite State Automata (FSA), we can manage everything from intelligent
+                    game AI to the high-speed "tokenization" of text in data analysis. When tasks require more depth, such as checking if a
+                    sentence is grammatically correct, Context-Free Grammars (CFGs) offer the structure needed to map out complex
+                    hierarchies. This essay explores how these mathematical models work in the real world to make software more predictable
+                    and ML models more accurate.
+                    <br><p></p>
+                    One of the most common applications of FSA is in gaming.
+                    <br><p></p>
+                    A Finite State Automaton (FSA) in gaming is a design pattern where an entity's behaviour is dictated by its current
+                    state, such as an enemy transitioning from a "Wander" state to an "Attack" state upon spotting a target. Each state is
+                    defined by specific conditions and behaviours, managed through an object-oriented approach that utilizes methods like
+                    enter(), exit(), and update() to handle transitions. These state changes can be triggered by discrete events, such as
+                    player input or collisions, as well as continuous factors like time progression which are processed by an input method
+                    or the update method. By maintaining an active_state field, a game object can dynamically swap its logic on the fly,
+                    ensuring that the entity's reactions remain organized and context dependent. Furthermore, in this design pattern, the
+                    update method and input method associated with an event usually returns the new state the game object should be in
+                    whereas the game object class usually has a change state method the calls the input method and update method to update
+                    the active_state field. Other simpler ways for a game object to store the current state would be to use an Enum data
+                    structure.
+                    <br><p></p>
+                    Another common use of FSA is being used in Lexical analyses to identify valid tokens from an input stream in Natural
+                    language processing. Lexical analyses or tokenisation is the process of breaking down an input stream into smaller
+                    chunks of data called Tokens. The FSA would represent the valid structure of the token. The way it works is you start at
+                    the beginning of the input stream, and you keep on reading each character until you get to an accepted state of you
+                    reach a potential dead end. If you reach a potential dead end, you start at the next character, after the first
+                    character of the previous FSA run. This process is repeated until all valid tokens are found in an input stream. By
+                    carrying out tokenisation or lexical analysis, you can find patterns and trends in pieces of text and large data.
+                    <br><p></p>
+                    Another common application of using Finate state automata is to combine them with machine learning (ML) models to make
+                    hybrid predictions about an output for a given input, essentially enhancing the accuracy of ML models. The best way to
+                    explain this is to give an example. Let's say you want to build a simple classifier, that given a string will output
+                    weather that string is an email or website. First you construct an automata that will have essentially 4 states, the
+                    start state (state 0) , the character state (state 1) , the dot state (state 2) , when u read in the dot character, and
+                    the email state (state 3) when you encounter the @ symbol and between each state u define the transition functions.
+                    Then for a given input u define a feature vector which is essentially a vector that represents the different state that
+                    you visited. For example, let's say your input was “hello.com”, the states visited would be 0, 1, 2. A possible feature
+                    vector would [1, 1, 1, 0] with the index representing the state in the FSA and the 1 indicates u have visited that state
+                    and 0 indicates u have not visited that state.
+                    Then the Feature vector would then be the input to a ML model which would have multi parameters and we would define the
+                    loss function used to assess the accuracy of the model.
+                    Then we would train the model with multiple strings for which we would generate the corresponding feature vectors which
+                    would act as the input for our ML model, leading the model to achieve the parameters which are the most efficient. Then
+                    finally we would use the hybrid model with the automata model along with the ML model to make predictions about weather
+                    a given string is an email or website. One of the advantages is that it combats hallucination, so if the ML model
+                    hallucinates and predicts that a string like “hello!!!” is website, the automate can be used to fact check it and
+                    realises this is clearly wrong.
+                    <br><p></p>
+                    One of the most common applications of CFGs is in also in NLP. Natural language processing is a subset of AI, dedicated
+                    to helping computer understand human text. CFGs help in this by enabling a machine to understand and analyse the
+                    grammatical structure of a sentence to see if is grammatically correct which is known as syntax parsing. Syntax trees,
+                    also known as a parse tree, is used to verify whether a sentence follows the correct grammar and each node in this tree
+                    represents a non-terminal symbol whereas a leaf node represents a terminal symbol, most commonly a character. The two
+                    primary methods of producing a syntax tree, based on the grammatical rules defined by a context free grammar, is using
+                    Top-Down Parsing and Bottom-Up Parsing. Top-down parsing is when we start at the Start symbol, Commonly denoted by S and
+                    aim to re write the sentence using the rules only. Essentially, we start from the root of the tree and make our ways to
+                    the leaf nodes of the tree. This is the method we have been taught on this module. The other technique is called
+                    bottom-up parsing which is where we start with input words and we try to work our way to the start symbol, effectively
+                    aiming to reduce sentence to start symbol.
+                    <br><p></p>
+                    One of the key limitations of CFGs when it comes to syntax parsing is when dealing with ambiguous sentences , with the
+                    most famous one being the “I saw the man with a telescope”. Now syntactically, it makes sense, however the problem is it
+                    leads to more then one parse tree is derived, making it more difficult for the computer to pick the correct one as they
+                    have slightly different meanings with a possible solution to use probabilistic CFG.
+                    <br><p></p>
+                    In conclusion, FSAs can be applied to gaming to make the actions of game objects to simplify the game logic more by
+                    avoiding long winded complex if statements to making more tokenisation more robust whilst the use of Context free
+                    Grammers are a more way expressing was in parsing the token produced by lexical analysis in compilers.
+                </p>
+            </div>
+        </section>
+    </article>
+</body>
+</html>
