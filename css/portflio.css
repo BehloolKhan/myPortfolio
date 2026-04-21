@@ -1,0 +1,118 @@
+body {
+
+    background-image: url("/images/homePageBackground.png");
+    font-family: "Pangolin";
+    font-size:1.2rem;
+}
+
+/* general css */
+h1 {
+    font-size:2rem;
+}
+
+h2 {
+    font-size:1.5rem;
+}
+
+article {
+
+    display:grid;
+    grid-template-areas: 
+    "navBar navBar navBar"
+    "Project Project Project"
+    "Boolean Projectile Simulation"
+    ;
+    gap:1rem;
+    margin:2rem;
+    
+}
+
+/* Css to do with nav Bar */
+#navBar {
+
+    grid-area:navBar;
+
+
+    display:flex;
+    justify-content: space-between;
+
+    background-color: #EAF1FF;
+    color:blueviolet;
+
+    padding:0.5rem;
+    border-radius:1rem;
+}
+
+#navBar nav {
+
+    display:flex;
+    gap:0.4rem;
+    align-items: center;
+}
+
+
+#Projects {
+
+    grid-area:Project;
+    text-align: center;
+}
+
+#BooleanProject {
+    grid-area:Boolean;
+}
+
+#ProjectileProject {
+
+    grid-area:Projectile;
+
+}
+
+#SimulationProject {
+
+    grid-area:Simulation;
+}
+
+/* Applies to the sections about projects */
+.projectSection {
+
+    background-color: rgba(255, 255, 255, 0.536);
+    border-radius: 1.5rem;
+    padding:1rem;
+}
+
+/* Applies to the titles in the projects */
+.projectTitles {
+    text-align: center;
+}
+
+/* Applies to the images in the project section */
+.projectImage{
+
+    width:12rem;
+    text-align:center;
+    grid-area:Image;
+}
+
+/* Applies to the figure element inside a project section making it a grid*/
+.projectFigure {
+
+    display:grid;
+    grid-template-areas: 
+    "Title Title"
+    "Image link"
+    ;
+    place-items: center;
+}
+
+.projectFigure figcaption {
+
+    grid-area:Title;
+}
+
+.projectFigure a {
+
+    grid-area:link;
+    background-color: blueviolet;
+    padding:0.4rem;
+    border-radius: 0.3rem;
+}

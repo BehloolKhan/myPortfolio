@@ -1,0 +1,98 @@
+#logo {
+
+    width:4rem;
+}
+
+body {
+
+    background-color: rgb(164, 204, 241);
+    font-size: 1.3rem;
+    font-family: "Comfortaa";
+}
+
+/* css to do with the addEntry and welcome back message */
+h1 {
+
+    font-size:2rem;
+
+    background-color: rgb(245, 213, 153);
+    text-align: center;
+
+    padding:1rem;
+    border-radius: 0.5rem;
+}
+
+#message h2 {
+
+    font-size:1.5rem;
+    background-color: rgb(245, 213, 153);
+    text-align: center;
+
+    padding:0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+/* css to do with the addEntry and welcome back message */
+.userInput {
+
+    background-color: rgb(164, 204, 241);
+    border-radius: 0.2rem;
+}
+
+/* css to do with buttons */
+.Button {
+
+    background-color: rgb(212, 173, 248);
+    padding:0.5rem;
+    border:solid 2pt blueviolet;
+    border-radius:1rem;
+}
+
+#Buttons {
+
+    display:flex;
+    justify-content: space-around;
+}
+/* css to do with buttons */
+
+article {
+
+    display:grid;
+    place-items:center;
+    grid-template-areas: 
+    "title title"
+    "image form"
+    ;
+
+    margin:1rem;
+}
+
+/* css to with form section */
+#Form {
+
+    grid-area:form;
+    background-color: white;
+    padding:1rem;
+    border-radius: 1rem;
+}
+
+fieldset{
+
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+    margin:1rem;
+}
+
+/* css to with form section */
+
+
+#Image {
+
+    grid-area:image;
+}
+
+h1{
+    grid-area:title
+}

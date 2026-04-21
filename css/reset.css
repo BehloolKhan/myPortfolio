@@ -1,0 +1,8 @@
+html, body, table, caption, thead, tbody, tfoot, tr, td, section, form, p, fieldset, legend, article, label, input, h1, h2, h3, div, figcaption, figure, ul, li{
+ margin: 0;
+ padding: 0%;
+ border: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ 
+}

@@ -1,0 +1,99 @@
+body {
+    background-image: url("/images/computerBetter.png");
+    font-family: "Space Grotesk";
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+article {
+
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    margin:1rem;
+}
+
+/* Css to style the nav bar */
+#navBar {
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+    background-color: #bdd1fa;
+    color:blueviolet;
+    
+    padding:0.4rem;
+    border-radius: 0.4rem;
+
+    margin:0.5rem;
+}
+
+#navBar nav {
+
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    align-items: center;
+}
+
+/* ************************ */
+
+
+/* Formatting the sections */
+section{
+
+    display:grid;
+    grid-template-areas: 
+    "title title"
+    "about Grades"
+    ;
+    place-items: center;
+
+    background-color: rgba(91, 163, 245, 0.799);
+    color:blueviolet;
+
+    border-radius: 1rem;
+    margin-right:5rem;
+    margin-left:5rem;
+
+    gap:1rem;
+}
+
+section h2 {
+
+    grid-area:title;
+}
+
+.About {
+
+    grid-area:about;
+}
+
+.Grades {
+    grid-area: Grades;
+}
+/* Formatting the sections */
+
+/* Formatting the speficific sections */
+#arkElvin{
+
+    position:relative;
+    top:0rem;
+    left:5rem;
+}
+
+#WoodhouseCollege {
+
+    position:relative;
+    top:0rem;
+    right:5rem;
+}
+
+#QueenMary{
+
+    position:relative;
+    top:0rem;
+    left:5rem;
+}
+

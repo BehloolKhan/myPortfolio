@@ -1,0 +1,120 @@
+body {
+
+    background-image: url("/images/homePageBackground.png");
+    font-family: "Space Grotesk";
+    font-size:1.2rem;
+}
+
+/*styling images*/
+.icon {
+
+    width:4rem;
+}
+
+/* styling the h1 and h2 tags */
+h2 {
+
+    font-size:1.5rem;
+}
+
+h1 {
+
+    font-size: 2rem;;
+}
+
+
+article {
+
+    display:grid;
+    grid-template-areas: 
+    "navBar navBar"
+    "Intro contact"
+    "AboutMe AboutMe";
+    padding:1.5rem;
+    gap:0.4rem;
+
+}
+
+/* Css to style the nav bar */
+#navBar {
+
+    grid-area:navBar;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+    background-color: #EAF1FF;
+    color:blueviolet;
+    
+    padding:0.4rem;
+    border-radius: 0.4rem;;
+}
+
+#navBar nav {
+
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    align-items: center;
+}
+
+/* ************************ */
+
+
+#Intro {
+
+    grid-area:Intro;
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+#Intro a {
+
+    background-color: rgb(182, 113, 247);
+    border-radius: 0.4rem;
+    padding:0.5rem;
+    width:9rem;
+}
+
+#AboutMe {
+
+    grid-area:AboutMe;
+    background-color: rgba(255, 255, 255, 0.49);
+    padding:2rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Css to do with contacts section */
+#contact {
+
+    grid-area:contact;
+    background-color: rgba(255, 255, 255, 0.43);
+    padding:1rem;
+    margin:2rem;
+    border-radius: 0.5rem;
+}
+
+#contact #subContainer {
+
+     display:flex;
+     flex-direction: column;
+     gap:0.2rem;
+}
+
+.iconFigures {
+
+    display:flex;
+    gap:0.5rem;
+}
+
+
+/* ****************************** */
+
+
+#subContainer {
+
+    background-color: rgba(255, 255, 255, 0.523);
+}
